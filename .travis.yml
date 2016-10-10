@@ -1,0 +1,11 @@
+--- 
+before_script: 
+  - "autopep8 -ir *"
+  - "flake8 --max-complexity=15 --exclude=*.txt,*.md *"
+install: "pip install -r requerimientos.txt"
+language: python
+python: 
+  - "2.7"
+script: 
+  - "python figurastest.py -v"
+
