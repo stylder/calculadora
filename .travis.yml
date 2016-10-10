@@ -7,5 +7,5 @@ language: python
 python: 
   - "2.7"
 script: 
-  - "python figurastest.py -v"
-
+  - cd calculadora
+  - lettuce tests/
